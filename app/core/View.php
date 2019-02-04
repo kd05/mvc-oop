@@ -23,5 +23,9 @@ class View
             include VIEW.$this->view_file.".phtml";
         }
     }
+
+    function getAction(){
+        return explode("/",$this->view_file)[1];
+    }
     
 }

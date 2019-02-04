@@ -1,8 +1,12 @@
+<?php
 
+echo $this->getAction();
+?>
 
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 
@@ -10,7 +14,13 @@
 
 
 
-<h1>This is Header</h1>
+
+<nav>
+    <ul>
+        <li><a href="/home/index">Home</a></li>
+        <li><a href="/home/aboutUs">About Us</a></li>
+    </ul>
+</nav>
 
 
-
+<?php  var_dump($this); ?>
